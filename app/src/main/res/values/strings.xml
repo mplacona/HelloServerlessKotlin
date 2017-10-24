@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hello Serverless Kotlin</string>
+    <string name="greet_me">Greet me!</string>
+    <string name="enter_your_name">Enter your name</string>
+</resources>
