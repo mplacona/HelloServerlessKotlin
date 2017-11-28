@@ -1,4 +1,4 @@
-# Serverless Koltin
+# Serverless Kotlin
 
 A sample Android application that uses a serverless function to get data from a backend server
 
