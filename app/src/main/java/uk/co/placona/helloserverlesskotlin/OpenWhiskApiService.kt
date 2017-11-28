@@ -8,11 +8,9 @@ import retrofit2.adapter.rxjava2.*
 import retrofit2.converter.gson.*
 import retrofit2.http.*
 
-
-
 interface OpenWhiskApiService {
 
-    @POST("kotlin_os.json")
+    @POST("kotlinconf.json")
     fun nameEchoer(@Body body: Model.Request): Observable<Model.Result>
 
     companion object {
@@ -27,7 +25,7 @@ interface OpenWhiskApiService {
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(httpClient.build())
-                    .baseUrl("https://openwhisk.eu-gb.bluemix.net/api/v1/web/mplacona_dev/demo/")
+                    .baseUrl(BuildConfig.OPEN_WHISK_FUNCTION_URI)
                     .build()
 
             return retrofit.create(OpenWhiskApiService::class.java)

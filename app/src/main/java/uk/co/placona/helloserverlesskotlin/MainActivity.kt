@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private var disposable: Disposable? = null
+    private lateinit var disposable:Disposable
 
     private val openWhiskApiService by lazy {
         OpenWhiskApiService.create()
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        disposable?.dispose()
+        disposable.dispose()
     }
 
 }
