@@ -5,7 +5,7 @@ A sample Android application that uses a serverless function to get data from a 
 ### Prerequisites
 
 - To run this application you will need to have the latest version of [Android Studio](https://developer.android.com/studio/index.html). Just make sure you update `OPEN_WHISK_FUNCTION_URI` with the URI you got from your serverless function
-- You will also need to deploy the Serverless Function as described [here]()
+- You will also need to deploy the Serverless Function as described [here](https://www.twilio.com/blog/2017/11/building-serverless-functions-with-kotlin.html)
 
 ## Built With
 
